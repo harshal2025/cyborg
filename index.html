@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NeuroForge Cyborg Systems</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <canvas class="signal-field" aria-hidden="true"></canvas>
+    <header class="site-header" data-header>
+      <a class="brand" href="#top" aria-label="NeuroForge home">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span>NeuroForge</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
+        <a href="#platform">Platform</a>
+        <a href="#systems">Systems</a>
+        <a href="#metrics">Metrics</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-media" aria-hidden="true">
+          <img src="assets/cyborg-hero.png" alt="" />
+        </div>
+        <div class="hero-shade" aria-hidden="true"></div>
+        <div class="hero-grid" aria-hidden="true"></div>
+        <div class="hero-content">
+          <p class="eyebrow">Bioadaptive interface lab</p>
+          <h1 id="hero-title">Cyborg intelligence tuned for human velocity.</h1>
+          <p class="hero-copy">
+            NeuroForge builds adaptive prosthetic control, neural telemetry, and resilient machine
+            perception for teams shaping the next era of augmented work.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#contact">Start Protocol</a>
+            <a class="button button-secondary" href="#systems">Explore Systems</a>
+          </div>
+        </div>
+        <aside class="status-panel" aria-label="Live platform status">
+          <div>
+            <span>Neural sync</span>
+            <strong>98.7%</strong>
+          </div>
+          <div>
+            <span>Latency</span>
+            <strong>04 ms</strong>
+          </div>
+          <div>
+            <span>Active nodes</span>
+            <strong>312</strong>
+          </div>
+        </aside>
+      </section>
+
+      <section class="platform section" id="platform" aria-labelledby="platform-title">
+        <div class="section-heading">
+          <p class="eyebrow">The platform</p>
+          <h2 id="platform-title">Every signal treated as living infrastructure.</h2>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card">
+            <span class="feature-icon">N</span>
+            <h3>Neural Mesh</h3>
+            <p>Context-aware routing maps biological intent to high-fidelity actuator commands.</p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-icon">S</span>
+            <h3>Sensory Fusion</h3>
+            <p>Visual, haptic, and biometric streams combine into one adaptive operator model.</p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-icon">A</span>
+            <h3>Autonomic Guardrails</h3>
+            <p>On-device safety layers isolate anomalies before they reach critical movement loops.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="systems section" id="systems" aria-labelledby="systems-title">
+        <div class="systems-copy">
+          <p class="eyebrow">Operating modes</p>
+          <h2 id="systems-title">From lab calibration to field autonomy.</h2>
+          <p>
+            The interface shifts between assisted control, predictive stabilization, and autonomous
+            maintenance without breaking operator trust.
+          </p>
+        </div>
+        <div class="mode-stack" aria-label="Cyborg operating modes">
+          <button class="mode-card is-active" type="button">
+            <span>01</span>
+            <strong>Intent Capture</strong>
+            <small>Reads motion plans before the body completes them.</small>
+          </button>
+          <button class="mode-card" type="button">
+            <span>02</span>
+            <strong>Force Translation</strong>
+            <small>Converts micro-signals into balanced mechanical output.</small>
+          </button>
+          <button class="mode-card" type="button">
+            <span>03</span>
+            <strong>Recovery Loop</strong>
+            <small>Repairs drift, noise, and overload while systems stay online.</small>
+          </button>
+        </div>
+      </section>
+
+      <section class="metrics section" id="metrics" aria-labelledby="metrics-title">
+        <div class="section-heading">
+          <p class="eyebrow">Performance layer</p>
+          <h2 id="metrics-title">Built for precision under pressure.</h2>
+        </div>
+        <div class="metric-row">
+          <div class="metric">
+            <strong data-count="4">0</strong>
+            <span>ms response</span>
+          </div>
+          <div class="metric">
+            <strong data-count="99">0</strong>
+            <span>% signal uptime</span>
+          </div>
+          <div class="metric">
+            <strong data-count="72">0</strong>
+            <span>sensor channels</span>
+          </div>
+          <div class="metric">
+            <strong data-count="18">0</strong>
+            <span>adaptive modules</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact section" id="contact" aria-labelledby="contact-title">
+        <div>
+          <p class="eyebrow">Deployment window</p>
+          <h2 id="contact-title">Bring augmentation into your workflow.</h2>
+        </div>
+        <form class="contact-form">
+          <label>
+            <span>Name</span>
+            <input type="text" name="name" placeholder="Avery Stone" />
+          </label>
+          <label>
+            <span>Email</span>
+            <input type="email" name="email" placeholder="avery@lab.example" />
+          </label>
+          <label>
+            <span>Focus</span>
+            <select name="focus">
+              <option>Neural control</option>
+              <option>Prosthetic systems</option>
+              <option>Industrial autonomy</option>
+            </select>
+          </label>
+          <button class="button button-primary" type="submit">Transmit Request</button>
+        </form>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
